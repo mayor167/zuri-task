@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.HomeContainer .myslackusername {
+  visibility: hidden;
+}
+.showbtn {
+  position: relative;
+  width: 100%;
+}
+
+.details {
+  position: absolute;
+  transform: translateX(-50%);
+  top: 30px;
+  left: 40%;
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  visibility: hidden;
+  opacity: 0.1;
+  transition: all 0.3s ease-in-out;
+}
+.showbtn:hover .details {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+.HomeContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 100px 0 100px;
+}
+.HomeContainer h1 {
+  color: #101828;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+}
+.prof_con {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.HomeContainer .arrow {
+  position: absolute;
+  top: 35px;
+  right: 25%;
+}
+
+.arrow2 {
+  position: absolute;
+  top: 35px;
+  right: 300px;
+}
+
+.profile {
+  background-image: url(../images/profile1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 80px;
+  width: 80px;
+  border-radius: 256px;
+  margin-bottom: 10px;
+}
+
+.profile:hover {
+  background-image: url(../images/profile2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 80px;
+  width: 80px;
+}
+.btncontrol button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 500;
+  color: #101828;
+}
+.btncontrol {
+  background-color: #eaecf0;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 300px;
+  width: 100%;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+.btncontrol:hover {
+  background-color: #d0d5dd;
+}
+.logoafterbtn {
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.logoafterbtn .logo1 {
+  margin-right: 10px;
+}
+.logoafterbtn .logo2 {
+  margin-left: 10px;
+}
+.footer {
+  border-top: 1px solid #eaecf0;
+  width: 100%;
+  margin: 120px 0 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+.footer h1 {
+  color: #667085;
+  font-size: 12px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 50;
+  line-height: 24px;
+}
+.HomeContainer .arrow2 {
+  position: absolute;
+  top: 35px;
+  right: 40px;
+  visibility: hidden;
+}
+
+@media (max-width: 769px) {
+  .btncontrol {
+    padding: 0 10px;
+  }
+  .footer {
+    padding: 20px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .HomeContainer .arrow {
+    position: absolute;
+    top: 35px;
+    right: 40px;
+    visibility: hidden;
+  }
+  .HomeContainer .arrow2 {
+    position: absolute;
+    top: 35px;
+    right: 40px;
+    visibility: visible;
+  }
+
+  .footer img {
+    width: 200px;
+    height: 60px;
+  }
+}
